@@ -1,0 +1,23 @@
+{
+  "name": "my-cv",
+  "description": "Nuevo Curriculum Renovado",
+  "main": "index.js",
+  "authors": [
+    "jdonsan"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "cv",
+    "angular",
+    "node",
+    "front"
+  ],
+  "homepage": "https://github.com/jdonsan/my-cv",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

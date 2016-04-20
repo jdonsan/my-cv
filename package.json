@@ -1,0 +1,30 @@
+{
+  "name": "my-cv",
+  "version": "1.0.0",
+  "description": "Nuevo Curriculum Renovado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdonsan/my-cv.git"
+  },
+  "keywords": [
+    "cv",
+    "angular",
+    "node",
+    "front"
+  ],
+  "author": "jdonsan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdonsan/my-cv/issues"
+  },
+  "homepage": "https://github.com/jdonsan/my-cv#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "log4js": "^0.6.35",
+    "mongoose": "^4.4.12"
+  }
+}
