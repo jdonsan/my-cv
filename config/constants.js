@@ -1,9 +1,9 @@
 module.exports = {
     express: {
-       port: 4001 
+        port: process.env.PORT || 4001
     },
     mongodb: {
-        url: ''
+        url: 'mongodb://jdonsan:mycv2016@ds013941.mlab.com:13941/my-cv'
     },
     resources: [
         'course',
