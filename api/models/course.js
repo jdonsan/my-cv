@@ -6,11 +6,12 @@ var courseSchema = new Schema({
     description: String,
     type: {
         type: String,
-        enum : ['FRONT','BACK', 'BOTH', 'OTHERS'],
-        default : 'OTHERS'
+        enum: ['FRONT', 'BACK', 'BOTH', 'OTHERS'],
+        default: 'OTHERS'
     },
     academy: String,
-    year: Number
+    year: Number,
+    active: Boolean
 });
 
-module.exports =  mongoose.model('Course', courseSchema);
+module.exports = mongoose.model('Course', courseSchema);
