@@ -11,7 +11,7 @@ var browserify = require('browserify'),
 
 var config = {
     path: {
-        entry: './front/src/app',
+        entry: './front/src',
         dest: 'statics/js'
     },
     file: {
