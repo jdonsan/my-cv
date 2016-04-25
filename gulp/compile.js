@@ -11,11 +11,11 @@ var browserify = require('browserify'),
 
 var config = {
     path: {
-        entry: './front/js/app',
+        entry: './front/src/app',
         dest: 'statics/js'
     },
     file: {
-        js: 'app.min.js'
+        js: '2.app.min.js'
     }
 };
 
@@ -39,4 +39,4 @@ module.exports = function () {
         .pipe(gulp.dest(config.path.dest));
 };
 
-//module.exports.dependencies = ['eslint', 'templates'];
+module.exports.dependencies = ['eslint'];

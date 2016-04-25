@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var inject = require('gulp-inject');
+var htmlmin = require('gulp-htmlmin');
 
 var path = {
     origin: './front/index.html',
@@ -14,10 +15,14 @@ module.exports = function (done) {
         .on('end', function () {
             gulp.src(`${path.dest}/index.html`)
                 .pipe(inject(sources, { relative: true }))
+                .pipe(htmlmin({
+                    collapseWhitespace: true,
+                    removeComments: true
+                }))
                 .pipe(gulp.dest('./statics'))
                 .on('end', done);
         });
 
 }
 
-module.exports.dependencies = ['compile', 'sass'];
+module.exports.dependencies = ['compile', 'vendors', 'sass'];
