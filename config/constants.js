@@ -3,7 +3,7 @@ module.exports = {
         port: process.env.PORT || 4001
     },
     mongodb: {
-        url: 'mongodb://jdonsan:mycv2016@ds013941.mlab.com:13941/my-cv'
+        url: ''
     },
     resources: [
         'course',
