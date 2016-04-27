@@ -1,0 +1,12 @@
+.drawer {
+    display: none;
+    
+    @media screen and (min-width: $screen-md-min) { 
+        display: block;
+        position: fixed;
+        width: $width-drawer-screen-md;
+        bottom: 0;
+        top: 0;
+        background: $basic-color-2;
+    }
+}
