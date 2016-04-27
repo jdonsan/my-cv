@@ -1,3 +1,8 @@
+@import 'reset';
+@import 'vars';
+
 body {
-    background: red;
+    background: $basic-color-1;
 }
+
+@import 'front/src/core/components/style';
