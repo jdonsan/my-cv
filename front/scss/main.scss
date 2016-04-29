@@ -1,8 +1,9 @@
+// styles core
 @import 'reset';
 @import 'vars';
+@import 'fonts';
+@import 'elements';
+@import 'generics';
 
-body {
-    background: $basic-color-1;
-}
-
+// styles app
 @import 'front/src/core/components/style';

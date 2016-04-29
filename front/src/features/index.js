@@ -1,5 +1,5 @@
-import './home/';
-import './jobs/';
+import './home';
+import './jobs';
 
 angular.module('app.features', [
     'app.features.home',

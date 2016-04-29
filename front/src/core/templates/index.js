@@ -1,0 +1,6 @@
+angular.module("app").run(["$templateCache", function($templateCache) {$templateCache.put("src/app/template.html","<jds-drawer></jds-drawer>\r\n<jds-main>\r\n    <jds-toolbar></jds-toolbar>\r\n    <div ui-view></div>\r\n</jds-main>");
+$templateCache.put("src/features/home/template.html","<h1>Page Home</h1>");
+$templateCache.put("src/features/jobs/template.html","<h1>Page jobs</h1>");
+$templateCache.put("src/core/components/drawer/template.html","<nav class=\"drawer\">\r\n    <header class=\"drawer-header\"></header>\r\n    <ul>\r\n        <li><a ui-sref=\"app.home\">Perfil</a></li>\r\n        <li><a ui-sref=\"app.home\">Conocimientos</a></li>\r\n        <li><a ui-sref=\"app.jobs\">Trabajos</a></li>\r\n        <li><a ui-sref=\"app.home\">Estudios</a></li>\r\n        <li><a ui-sref=\"app.jobs\">Contacto</a></li>\r\n    </ul>\r\n</nav>");
+$templateCache.put("src/core/components/main/template.html","<main class=\"main\" ng-transclude=\"\">\r\n\r\n</main>");
+$templateCache.put("src/core/components/toolbar/template.html","<header class=\"toolbar\">\r\n    <div class=\"toolbar-menu\">\r\n        <button>\r\n            <i class=\"material-icons\">menu</i>\r\n        </button>\r\n    </div>\r\n    <div class=\"toolbar-title\">\r\n        <h1>José Antonio Dongil Sánchez</h1>\r\n    </div>\r\n</header>");}]);

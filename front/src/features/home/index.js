@@ -1,2 +1,5 @@
+import route from './route';
+
 angular
-    .module('app.features.home', []);
+    .module('app.features.home', [])
+    .config(route);
