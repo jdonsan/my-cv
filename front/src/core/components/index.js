@@ -1,5 +1,9 @@
-import header from './header/';
+import header from './toolbar';
+import drawer from './drawer';
+import main from './main';
 
 angular
     .module('app.core.components', [])
-    .component('jds-header', header);
+    .component('jdsToolbar', header)
+    .component('jdsDrawer', drawer)
+    .component('jdsMain', main);

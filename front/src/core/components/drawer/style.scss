@@ -1,6 +1,6 @@
 .drawer {
     display: none;
-    
+   
     @media screen and (min-width: $screen-md-min) { 
         display: block;
         position: fixed;
@@ -8,5 +8,14 @@
         bottom: 0;
         top: 0;
         background: $basic-color-2;
+    }
+}
+
+.drawer-header {
+    height: $height-toolbar-screen-sm;
+    border-bottom: 1px solid $basic-color-3;
+    
+    @media screen and (min-width: $screen-md-min) { 
+        height: $height-toolbar-screen-md;
     }
 }
