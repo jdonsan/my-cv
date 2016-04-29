@@ -23,7 +23,10 @@ module.exports = function () {
     var development = environments.development;
     var production = environments.production;
     var sources = browserify({
-        entries: [`${config.path.entry}/app`],
+        entries: [
+            `${config.path.entry}/index.js`, 
+            `${config.path.entry}/core/templates/index.js`
+        ],
         debug: true
     }).transform(babelify, {
         presets: ["es2015"],
@@ -39,4 +42,4 @@ module.exports = function () {
         .pipe(gulp.dest(config.path.dest));
 };
 
-module.exports.dependencies = ['eslint'];
+module.exports.dependencies = ['eslint', 'templates'];
