@@ -1,0 +1,37 @@
+.jumbotron {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.26);
+    background: #EEEEEE;
+    display: flex;
+    padding: 1rem;
+    padding-top: $height-toolbar-screen-sm;
+    align-items: flex-end;
+    justify-content: center;
+    height: 6rem;
+    
+    @media screen and (min-width: $screen-md-min) { 
+        justify-content: space-between;
+        padding-top: $height-toolbar-screen-md;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        height: 12rem;
+    }
+    
+    h2 {
+        margin: 0;
+        font-size: 3.5rem;
+        display: none;
+        color: $basic-color-4;
+        
+        @media screen and (min-width: $screen-md-min) { 
+            display: block;
+        }
+    }
+    
+    img {
+        box-shadow: 0 7px 10px rgba(0,0,0,.26);
+        border-radius: 100%;
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: -4.75rem;
+    }
+}
