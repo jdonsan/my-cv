@@ -1,3 +1,6 @@
 export default {
-    templateUrl: 'src/core/components/jumbotron/template.html'
+    templateUrl: 'src/core/components/jumbotron/template.html',
+    bindings: {
+        tittle: '@'
+    }
 };
