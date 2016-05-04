@@ -3,6 +3,12 @@
     background: $basic-color-2;
     border-radius: 2px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.26);
+    margin: 0 0.5rem 1rem 0.5rem;
+    
+    @media screen and (min-width: $screen-md-min) { 
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
 }
 
 .card-media {
