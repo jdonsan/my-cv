@@ -38,7 +38,7 @@ module.exports = function () {
         .pipe(vinylSourceStream(config.file.js))
         .pipe(vinylBuffer())
         .pipe(ngAnnotate())
-        .pipe(uglify())
+       // .pipe(uglify())
         .pipe(gulp.dest(config.path.dest));
 };
 

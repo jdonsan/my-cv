@@ -1,7 +1,12 @@
 import './components';
 import './services';
+import constants from './constants';
 
-angular.module('app.core', [
+const dependencies = [
     'app.core.components',
     'app.core.services'
-]);
+];
+
+angular
+    .module('app.core', dependencies)
+    .constant('constants', constants);
