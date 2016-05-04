@@ -2,7 +2,7 @@
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: url(../fonts/material-icons/material-icons-regular.eot); /* For IE6-8 */
     src: local('Material Icons'),
         local('MaterialIcons-Regular'),
         url(../fonts/material-icons/material-icons-regular.woff2) format('woff2'),
@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'Roboto Medium';
-    src: url('roboto-medium.eot');
+    src: url('../fonts/roboto-medium/roboto-medium.eot');
     src: url('../fonts/roboto-medium/roboto-medium.eot?#iefix') format('embedded-opentype'),
         url('../fonts/roboto-medium/roboto-medium.woff2') format('woff2'),
         url('../fonts/roboto-medium/roboto-medium.woff') format('woff'),
@@ -20,4 +20,16 @@
         url('../fonts/roboto-medium/roboto-medium.svg#robotomedium') format('svg');
     font-weight: 400;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/roboto-light/roboto-light.eot');
+    src: url('../fonts/roboto-light/roboto-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-light/roboto-light.woff2') format('woff2'),
+         url('../fonts/roboto-light/roboto-light.woff') format('woff'),
+         url('../fonts/roboto-light/roboto-light.ttf') format('truetype'),
+         url('../fonts/roboto-light/roboto-light.svg#robotolight') format('svg');
+    font-weight: lighter;
+    font-style: nornal;
 }
