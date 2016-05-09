@@ -1,4 +1,11 @@
 <jds-jumbotron tittle="Estudios"></jds-jumbotron>
 <jds-container>
-    <h1>Page Estudios</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum, dignissimos eius fugiat numquam! Porro voluptates unde dolore omnis recusandae officiis, at atque dolorum enim, est esse. Accusamus, in, et!</p>
+    <jds-card ng-repeat="study in sc.studies">
+        <div class="card-media"></div>
+        <div class="card-title">
+            <h3>{{study.name}}</h3>
+            <h4>Años de experiencia: {{study.yearsExperience}}</h4>
+        </div>
+    </jds-card>
 </jds-container>

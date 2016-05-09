@@ -4,6 +4,7 @@ export default function ($stateProvider) {
     $stateProvider
         .state('app.study', {
             url: '/study',
-            templateUrl: 'src/features/study/template.html'
+            templateUrl: 'src/features/study/template.html',
+            controller:'StudyController as sc'
         });
 }
