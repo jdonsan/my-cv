@@ -5,5 +5,6 @@ export default function ($stateProvider) {
         .state('app.jobs', {
             url: '/jobs',
             templateUrl: 'src/features/jobs/template.html',
+            controller:'JobsController as jc'
         });
 }

@@ -1,4 +1,11 @@
 <jds-jumbotron tittle="Experiencia"></jds-jumbotron>
 <jds-container>
-    <h1>Page jobs</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum, dignissimos eius fugiat numquam! Porro voluptates unde dolore omnis recusandae officiis, at atque dolorum enim, est esse. Accusamus, in, et!</p>
+    <jds-card ng-repeat="job in jc.jobs">
+        <div class="card-media"></div>
+        <div class="card-title">
+            <h3>{{job.name}}</h3>
+            <h4>Años de experiencia: {{job.yearsExperience}}</h4>
+        </div>
+    </jds-card>
 </jds-container>
