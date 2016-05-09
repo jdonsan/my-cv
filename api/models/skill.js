@@ -4,6 +4,7 @@ var Schema = mongoose.Schema;
 var skillSchema = new Schema({
     name: String,
     description: String,
+    category: String,
     type: {
         type: String,
         enum: ['FRONT', 'BACK', 'BOTH', 'OTHERS']
