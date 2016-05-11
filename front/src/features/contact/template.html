@@ -1,4 +1,15 @@
 <jds-jumbotron tittle="Contactos"></jds-jumbotron>
 <jds-container>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum adipisci temporibus consequatur sequi doloremque obcaecati! Nesciunt illum modi sit eligendi, harum maiores atque praesentium delectus voluptatem corporis aliquid optio totam.</p>
+    <p>Si deseas saber más de mi y de mi trabajo, puedes encontrar más en los siguientes canales oficiales:</p>
+    <ul class="list">
+        <li class="list-item" ng-repeat="contact in cc.contacts">
+            <a ng-href={{contact.url}} target="_blank">
+                <img ng-src={{contact.logo}} alt="">
+                <div>
+                    <h3>{{contact.name}}</h3>
+                    <p>{{contact.description}}</p>
+                </div>
+            </a>
+        </li>
+    </ul>
 </jds-container>

@@ -4,6 +4,7 @@ export default function ($stateProvider) {
     $stateProvider
         .state('app.contact', {
             url: '/contact',
-            templateUrl: 'src/features/contact/template.html'
+            templateUrl: 'src/features/contact/template.html',
+            controller: 'ContactController as cc'
         });
 }
