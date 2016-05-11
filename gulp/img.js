@@ -9,7 +9,7 @@ module.exports = function () {
         use: [pngquant()]
     };
 
-    return gulp.src('front/img/*')
+    return gulp.src('front/img/**/*')
         .pipe(imagemin(imageminOpt))
         .pipe(gulp.dest('statics/img'));
 };

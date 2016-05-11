@@ -11,6 +11,9 @@ var path = {
     html: [
         './front/src/**/*.html',
         './front/index.html'
+    ],
+    img: [
+        './front/img/**/*'
     ]
 };
 
@@ -18,4 +21,5 @@ module.exports = function () {
     gulp.watch(path.js, ['compile']);
     gulp.watch(path.sass, ['sass']);
     gulp.watch(path.html, ['html']);
+    gulp.watch(path.img, ['img']);
 };
