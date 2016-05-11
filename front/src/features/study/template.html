@@ -1,11 +1,21 @@
 <jds-jumbotron tittle="Estudios"></jds-jumbotron>
 <jds-container>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum, dignissimos eius fugiat numquam! Porro voluptates unde dolore omnis recusandae officiis, at atque dolorum enim, est esse. Accusamus, in, et!</p>
+    <p>Me gusta mucho aprender cosas nuevas. Me apasionan las tecnologías de la información y me encuentro muymotivado con todo
+        aquello que tenga que ver con ordenadores. Por eso, siempre he intentado seguir formandome y no parar de mejorar
+        en mi día a día. Estos son los sitios en los que me he formado académicamente:
+    </p>
+    
+    <h3>Estudios oficiales</h3>
     <jds-card ng-repeat="study in sc.studies">
-        <div class="card-media"></div>
+        <div class="card-media">
+            <img ng-src={{study.urlLogo}} alt="Estudio {{study.name}}">
+        </div>
         <div class="card-title">
-            <h3>{{study.name}}</h3>
-            <h4>Años de experiencia: {{study.yearsExperience}}</h4>
+            <h3>{{study.yearInit}} - {{study.yearEnd}}</h3>
+            <h4>{{study.name}} <small>({{study.academy}})</small></h4>
+            <p>{{study.description}}</p>
         </div>
     </jds-card>
+    
+    <h3>Otros cursos</h3>
 </jds-container>
