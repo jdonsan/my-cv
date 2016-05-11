@@ -39,6 +39,10 @@
         height: 3rem;
         width: 3rem;
         color: $basic-color-2; 
+        
+        &:focus {
+            outline:0;
+        }
     }
     
     @media screen and (min-width: $screen-md-min) { 

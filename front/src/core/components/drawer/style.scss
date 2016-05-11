@@ -1,14 +1,21 @@
 .drawer {
-    display: none;
-   
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: -$width-drawer-screen-sm;
+    width: $width-drawer-screen-sm;
+    background: $basic-color-2;
+    z-index: 50;
+    transition: left 1s;
+    
     @media screen and (min-width: $screen-md-min) { 
-        display: block;
-        position: fixed;
         width: $width-drawer-screen-md;
-        bottom: 0;
-        top: 0;
-        background: $basic-color-2;
+        left: 0;
     }
+}
+
+.drawer-active {
+    left: 0;
 }
 
 .drawer-header {
