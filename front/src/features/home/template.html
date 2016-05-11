@@ -1,4 +1,30 @@
 <jds-jumbotron tittle="Bienvenido"></jds-jumbotron>
 <jds-container>
-    <h1>Page Home</h1>
+    <p>{{pc.profile.description}}</p>
+    <ul class="list">
+        <li class="list-item">
+            <a>
+                <div>
+                    <h3>Mi nombre</h3>
+                    <p>{{pc.profile.name}} {{pc.profile.surname}}</p>
+                </div>
+            </a>
+        </li>
+        <li class="list-item">
+            <a>
+                <div>
+                    <h3>Mi rol actual</h3>
+                    <p>{{pc.profile.rol}}</p>
+                </div>
+            </a>
+        </li>
+        <li class="list-item">
+            <a>
+                <div>
+                    <h3>Mi experiencia profesional</h3>
+                    <p>{{pc.profile.experience}} años</p>
+                </div>
+            </a>
+        </li>
+    </ul>
 </jds-container>

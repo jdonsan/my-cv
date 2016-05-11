@@ -6,6 +6,7 @@ export default function ($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('app.home', {
             url: '/home',
-            templateUrl: 'src/features/home/template.html'
+            templateUrl: 'src/features/home/template.html',
+            controller: 'ProfileController as pc'
         });
 }

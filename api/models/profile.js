@@ -4,8 +4,9 @@ var Schema = mongoose.Schema;
 var profileSchema = new Schema({
     name: String,
     surname: String,
-    description: [String],
+    description: String,
     rol: String,
+    experience: Number,
     urlPhoto: String
 });
 
