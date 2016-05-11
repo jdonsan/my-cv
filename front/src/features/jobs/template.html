@@ -1,11 +1,21 @@
 <jds-jumbotron tittle="Experiencia"></jds-jumbotron>
 <jds-container>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum, dignissimos eius fugiat numquam! Porro voluptates unde dolore omnis recusandae officiis, at atque dolorum enim, est esse. Accusamus, in, et!</p>
+    <p>Solo he trabajado en una única empresa. Sin embargo creo que mi experiencia es bastante diversa debido a que no he trabajado
+        siempre en el mismo proyecto. He trabajado en proyectos grandes, en proyectos pequeños, en proyectos de larga y corta duración.
+        Ayudando en las oficinas de los clientes o participando del día a día de la sede de mi empresa. He trabajado en proyectos Waterfall
+        y con metodologías ágiles. 
+    </p>
+    <p>He trabajado con más de 100 profesionales de diferente edad, rol, profesionalidad y experiencia de los que
+        he aprendido y desaprendido mucho.
+    </p>
     <jds-card ng-repeat="job in jc.jobs">
-        <div class="card-media"></div>
+        <div class="card-media">
+            <img ng-src={{job.urlLogo}} alt="Job {{job.name}}">
+        </div>
         <div class="card-title">
-            <h3>{{job.name}}</h3>
-            <h4>Años de experiencia: {{job.yearsExperience}}</h4>
+            <h3>{{job.yearInit}} - {{job.yearEnd}}</h3>
+            <h4>{{job.enterprise}} (<small>{{job.name}}</small>)</h4>
+            <p>{{job.description}}</p>
         </div>
     </jds-card>
 </jds-container>
