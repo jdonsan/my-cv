@@ -1,0 +1,42 @@
+.list{
+    padding: 0.5rem 0rem 0rem 0rem;
+    margin: 0;
+    list-style: none;
+    background: $basic-color-2;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.26);
+    width: 100%;
+}
+
+.list-item {
+    a {
+        display: flex;
+        padding: 1rem;
+        border-bottom: 1px solid $basic-color-3;
+        color: $basic-color-4;
+        text-decoration: none;
+        transition: background 0.5s;
+        
+        &:hover {
+            background: $basic-color-3;
+        }
+    }
+    
+    img {
+        border-radius: 100%;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    div {
+        padding-left: 1rem;
+    }
+    
+    h3, p {
+        padding: 0;
+        margin: 0;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+}

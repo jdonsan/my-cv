@@ -3,9 +3,14 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    min-height: 20rem;
     
     @media screen and (min-width: $screen-md-min) { 
         padding: 3rem 1.5rem 1.5rem;
         justify-content: space-between;
+    }
+    
+    h3 {
+        width: 100%;
     }
 }

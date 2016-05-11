@@ -34,8 +34,16 @@
         line-height: 3rem;
         border-bottom: 1px solid $basic-color-3;
         color: $basic-color-4;
+        transition-property: color background;
+        transition-duration: 0.5s;
+        
         i {
             width: 3.5rem;
+        }
+        
+        &:hover {
+            background: $basic-color-3;
+            color: $primary-color;
         }
     }
 }
