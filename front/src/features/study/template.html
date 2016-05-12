@@ -18,4 +18,14 @@
     </jds-card>
     
     <h3>Otros cursos</h3>
+    <jds-card ng-repeat="course in sc.courses">
+        <div class="card-media">
+            <img ng-src={{course.urlLogo}} alt="Estudio {{course.name}}">
+        </div>
+        <div class="card-title">
+            <h3>{{course.year}}</h3>
+            <h4>{{course.name}} <small>({{course.academy}})</small></h4>
+            <p>{{course.description}}</p>
+        </div>
+    </jds-card>
 </jds-container>

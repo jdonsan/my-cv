@@ -11,6 +11,7 @@ var courseSchema = new Schema({
     },
     academy: String,
     year: Number,
+    urlLogo: String,
     active: Boolean
 });
 
