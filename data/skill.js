@@ -12,7 +12,7 @@ module.exports = {
             type: 'FRONT',
             level: 85,
             yearsExperience: 4,
-            logo: 'img/skils/javascript.js',
+            logo: 'img/skill/js.png',
             active: true
         },
         {
@@ -26,6 +26,7 @@ module.exports = {
             type: 'FRONT',
             level: 65,
             yearsExperience: 4,
+            logo: 'img/skill/css3.png',
             active: true
         },
         {
@@ -38,6 +39,7 @@ module.exports = {
             type: 'FRONT',
             level: 90,
             yearsExperience: 4,
+            logo: 'img/skill/html5.png',
             active: true
         },
         {
@@ -50,6 +52,7 @@ module.exports = {
             type: 'FRONT',
             level: 85,
             yearsExperience: 3,
+            logo: 'img/skill/angular.png',
             active: true
         },
         {
@@ -62,6 +65,7 @@ module.exports = {
             type: 'BACK',
             level: 65,
             yearsExperience: 2,
+            logo: 'img/skill/node.png',
             active: true
         },
         {
@@ -74,6 +78,7 @@ module.exports = {
             type: 'BACK',
             level: 55,
             yearsExperience: 2,
+            logo: 'img/skill/mongo.png',
             active: true
         }
     ]

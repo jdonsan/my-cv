@@ -11,6 +11,7 @@ var skillSchema = new Schema({
     },
     level: Number,
     yearsExperience: Number,
+    logo: String,
     active: Boolean
 });
 

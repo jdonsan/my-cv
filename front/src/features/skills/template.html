@@ -6,7 +6,7 @@
     </p>
     <jds-card ng-repeat="skill in sc.skills">
         <div class="card-header">
-            <img src="img/default.jpg" alt="default">
+            <img ng-src="{{skill.logo}}" alt="default">
             <div>
                 <h3>{{skill.name}}</h3>
                 <h4>{{skill.yearsExperience}} años de experiencia</h4>
