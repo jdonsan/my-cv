@@ -30,6 +30,7 @@ export default function ($scope) {
         text: 'Contacto',
         active: false
     }];
+    
     dr.activeOption = function (index) {
         dr.options.forEach((option) => option.active = false);
         dr.options[index].active = true;
