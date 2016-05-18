@@ -1,0 +1,17 @@
+.card-media {
+    height: 10.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+        width: 100%;
+        height: 10.5rem;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+}
+
+.card-media-progress {
+    width: 50%;
+}

@@ -1,0 +1,18 @@
+<div class="card-media">
+    <img ng-if="!$ctrl.progress" ng-src={{$ctrl.resource}} alt="{{$ctrl.resource}}">
+    <div ng-if="$ctrl.progress" class="card-media-progress">
+        <round-progress 
+            max="100" 
+            current="$ctrl.resource"
+            color="#45ccce" 
+            bgcolor="#eaeaea" 
+            radius="50" 
+            stroke="15" 
+            clockwise="true"
+            responsive="true" 
+            duration="1250" 
+            animation="easeInOutQuart" 
+            animation-delay="0">
+        </round-progress>
+    </div>
+</div>

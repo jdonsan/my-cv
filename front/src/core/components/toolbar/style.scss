@@ -19,11 +19,25 @@
 }
 
 .toolbar-title {
+    white-space: nowrap;
+    overflow: hidden;
+    
     h1 {
         margin: 0;
         font-size: 1.25rem;
         font-weight: 400;
         color: $basic-color-2;
+    }
+    
+    &:after {
+        content: "";
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 15%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), $primary-color 100%);
     }
 }
 

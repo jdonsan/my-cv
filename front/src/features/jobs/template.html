@@ -9,13 +9,13 @@
         he aprendido y desaprendido mucho.
     </p>
     <jds-card ng-repeat="job in jc.jobs">
-        <div class="card-media">
-            <img ng-src={{job.urlLogo}} alt="Job {{job.name}}">
-        </div>
-        <div class="card-title">
-            <h3>{{job.yearInit}} - {{job.yearEnd}}</h3>
-            <h4>{{job.enterprise}} (<small>{{job.name}}</small>)</h4>
-            <p>{{job.description}}</p>
-        </div>
+        <jds-card-media resource="{{job.urlLogo}}"></jds-card-media>
+        
+        <jds-card-content
+            title="{{job.yearInit}} - {{job.yearEnd}}"
+            subtitle="{{job.enterprise}}"
+            detail="{{job.name}}"
+            description="{{job.description}}">
+        </jds-card-content> 
     </jds-card>
 </jds-container>

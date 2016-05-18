@@ -7,25 +7,25 @@
     
     <h3>Estudios oficiales</h3>
     <jds-card ng-repeat="study in sc.studies">
-        <div class="card-media">
-            <img ng-src={{study.urlLogo}} alt="Estudio {{study.name}}">
-        </div>
-        <div class="card-title">
-            <h3>{{study.yearInit}} - {{study.yearEnd}}</h3>
-            <h4>{{study.name}} <small>({{study.academy}})</small></h4>
-            <p>{{study.description}}</p>
-        </div>
+        <jds-card-media resource="{{study.urlLogo}}"></jds-card-media>
+        
+        <jds-card-content
+            title="{{study.yearInit}} - {{study.yearEnd}}"
+            subtitle="{{study.name}}"
+            detail="{{study.academy}}"
+            description="{{study.description}}">
+        </jds-card-content> 
     </jds-card>
     
     <h3>Otros cursos</h3>
     <jds-card ng-repeat="course in sc.courses">
-        <div class="card-media">
-            <img ng-src={{course.urlLogo}} alt="Estudio {{course.name}}">
-        </div>
-        <div class="card-title">
-            <h3>{{course.year}}</h3>
-            <h4>{{course.name}} <small>({{course.academy}})</small></h4>
-            <p>{{course.description}}</p>
-        </div>
+        <jds-card-media resource="{{course.urlLogo}}"></jds-card-media>
+        
+        <jds-card-content
+            title="{{course.year}}"
+            subtitle="{{course.name}}"
+            detail="{{course.academy}}"
+            description="{{course.description}}">
+        </jds-card-content>
     </jds-card>
 </jds-container>
