@@ -7,6 +7,8 @@ import card from './card';
 import cardHeader from './card-header';
 import cardMedia from './card-media';
 import cardContent from './card-content';
+import list from './list';
+import listItem from './list-item';
 
 angular
     .module('app.core.components', [])
@@ -18,4 +20,6 @@ angular
     .component('jdsCard', card)
     .component('jdsCardHeader', cardHeader)
     .component('jdsCardMedia', cardMedia)
-    .component('jdsCardContent', cardContent);
+    .component('jdsCardContent', cardContent)
+    .component('jdsList', list)
+    .component('jdsListItem', listItem);

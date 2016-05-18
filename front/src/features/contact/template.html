@@ -1,15 +1,12 @@
 <jds-jumbotron tittle="Contactos"></jds-jumbotron>
 <jds-container>
     <p>Si deseas saber más de mi y de mi trabajo, puedes encontrar más en los siguientes canales oficiales:</p>
-    <ul class="list">
-        <li class="list-item" ng-repeat="contact in cc.contacts">
-            <a ng-href={{contact.url}} target="_blank">
-                <img ng-src={{contact.logo}} alt="">
-                <div>
-                    <h3>{{contact.name}}</h3>
-                    <p>{{contact.description}}</p>
-                </div>
-            </a>
-        </li>
-    </ul>
+    <jds-list>
+        <jds-list-item ng-repeat="contact in cc.contacts"
+            url="{{contact.url}}"
+            image="{{contact.logo}}"
+            title="{{contact.name}}"
+            description="{{contact.description}}">  
+        </jds-list-item>
+    </jds-list>
 </jds-container>
