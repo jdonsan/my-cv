@@ -1,3 +1,3 @@
 export default {
-     url: '/api/'
+    url: '/api/'
 };

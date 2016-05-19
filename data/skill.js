@@ -80,6 +80,84 @@ module.exports = {
             yearsExperience: 2,
             logo: 'img/skill/mongo.png',
             active: true
+        },
+        {
+            name: 'MVC.NET',
+            category: 'Framework Web',
+            description: `
+                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
+                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+            `,
+            type: 'BACK',
+            level: 75,
+            yearsExperience: 3,
+            logo: 'img/skill/mvcnet.png',
+            active: true
+        },
+        {
+            name: 'SQL Server',
+            category: 'Base de datos',
+            description: `
+                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
+                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+            `,
+            type: 'BACK',
+            level: 70,
+            yearsExperience: 3,
+            logo: 'img/skill/sql.jpg',
+            active: true
+        },
+        {
+            name: 'Scrum',
+            category: 'Metodologías ágiles',
+            description: `
+                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
+                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+            `,
+            type: 'OTHERS',
+            level: 80,
+            yearsExperience: 3,
+            logo: 'img/skill/scrum.png',
+            active: true
+        },
+        {
+            name: 'Ionic Framework',
+            category: 'Framework multiplataforma',
+            description: `
+                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
+                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+            `,
+            type: 'FRONT',
+            level: 75,
+            yearsExperience: 3,
+            logo: 'img/skill/ionic.png',
+            active: true
+        },
+        {
+            name: 'Cucumber',
+            category: 'Librería BDD',
+            description: `
+                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
+                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+            `,
+            type: 'OTHERS',
+            level: 50,
+            yearsExperience: 1,
+            logo: 'img/skill/cucumber.png',
+            active: true
+        },
+        {
+            name: 'Git',
+            category: 'Repositorio de código',
+            description: `
+                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
+                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+            `,
+            type: 'OTHERS',
+            level: 70,
+            yearsExperience: 2,
+            logo: 'img/skill/git.png',
+            active: true
         }
     ]
 };
