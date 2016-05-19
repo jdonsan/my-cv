@@ -1,26 +1,28 @@
 <jds-jumbotron tittle="Conocimientos"></jds-jumbotron>
 <jds-container>
-    <p>
-        A lo largo de los años, he aprendido un elevado número de tecnologías gracias a la diversidad de proyectos en los que
-        he trabajado. Sin embargo, existe un grupo de tecnologías en el que me encuentro cómodo y puedo ayudar y ser productivo
-        en un corto periodo de tiempo. Son las siguientes:
-    </p>
-    <jds-card ng-repeat="skill in sc.skills">
-        <jds-card-header 
-            image="{{skill.logo}}" 
-            title="{{skill.name}}" 
-            subtitle="{{skill.yearsExperience}} años de experiencia">
-        </jds-card-header>
+    <jds-loader resource="sc.skills">
+        <p>
+            A lo largo de los años, he aprendido un elevado número de tecnologías gracias a la diversidad de proyectos en los que
+            he trabajado. Sin embargo, existe un grupo de tecnologías en el que me encuentro cómodo y puedo ayudar y ser productivo
+            en un corto periodo de tiempo. Son las siguientes:
+        </p>
+        <jds-card ng-repeat="skill in sc.skills">
+            <jds-card-header 
+                image="{{skill.logo}}" 
+                title="{{skill.name}}" 
+                subtitle="{{skill.yearsExperience}} años de experiencia">
+            </jds-card-header>
 
-        <jds-card-media
-            progress="true"
-            resource="{{skill.level}}">
-        </jds-card-media>
-        
-        <jds-card-content
-            title="{{skill.type}}"
-            subtitle="{{skill.category}}"
-            description="{{skill.description}}">
-        </jds-card-content>
-    </jds-card>
+            <jds-card-media
+                progress="true"
+                resource="{{skill.level}}">
+            </jds-card-media>
+            
+            <jds-card-content
+                title="{{skill.type}}"
+                subtitle="{{skill.category}}"
+                description="{{skill.description}}">
+            </jds-card-content>
+        </jds-card>
+    </jds-loader>
 </jds-container>

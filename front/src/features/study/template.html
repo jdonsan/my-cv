@@ -1,31 +1,33 @@
 <jds-jumbotron tittle="Estudios"></jds-jumbotron>
 <jds-container>
-    <p>Me gusta mucho aprender cosas nuevas. Me apasionan las tecnologías de la información y me encuentro muymotivado con todo
-        aquello que tenga que ver con ordenadores. Por eso, siempre he intentado seguir formandome y no parar de mejorar
-        en mi día a día. Estos son los sitios en los que me he formado académicamente:
-    </p>
-    
-    <h3>Estudios oficiales</h3>
-    <jds-card ng-repeat="study in sc.studies">
-        <jds-card-media resource="{{study.urlLogo}}"></jds-card-media>
+    <jds-loader resource="sc.studies">
+        <p>Me gusta mucho aprender cosas nuevas. Me apasionan las tecnologías de la información y me encuentro muymotivado con todo
+            aquello que tenga que ver con ordenadores. Por eso, siempre he intentado seguir formandome y no parar de mejorar
+            en mi día a día. Estos son los sitios en los que me he formado académicamente:
+        </p>
         
-        <jds-card-content
-            title="{{study.yearInit}} - {{study.yearEnd}}"
-            subtitle="{{study.name}}"
-            detail="{{study.academy}}"
-            description="{{study.description}}">
-        </jds-card-content> 
-    </jds-card>
-    
-    <h3>Otros cursos</h3>
-    <jds-card ng-repeat="course in sc.courses">
-        <jds-card-media resource="{{course.urlLogo}}"></jds-card-media>
+        <h3>Estudios oficiales</h3>
+        <jds-card ng-repeat="study in sc.studies">
+            <jds-card-media resource="{{study.urlLogo}}"></jds-card-media>
+            
+            <jds-card-content
+                title="{{study.yearInit}} - {{study.yearEnd}}"
+                subtitle="{{study.name}}"
+                detail="{{study.academy}}"
+                description="{{study.description}}">
+            </jds-card-content> 
+        </jds-card>
         
-        <jds-card-content
-            title="{{course.year}}"
-            subtitle="{{course.name}}"
-            detail="{{course.academy}}"
-            description="{{course.description}}">
-        </jds-card-content>
-    </jds-card>
+        <h3>Otros cursos</h3>
+        <jds-card ng-repeat="course in sc.courses">
+            <jds-card-media resource="{{course.urlLogo}}"></jds-card-media>
+            
+            <jds-card-content
+                title="{{course.year}}"
+                subtitle="{{course.name}}"
+                detail="{{course.academy}}"
+                description="{{course.description}}">
+            </jds-card-content>
+        </jds-card>
+    </jds-loader>
 </jds-container>

@@ -1,21 +1,23 @@
 <jds-jumbotron tittle="Experiencia"></jds-jumbotron>
 <jds-container>
-    <p>Solo he trabajado en una única empresa. Sin embargo creo que mi experiencia es bastante diversa debido a que no he trabajado
-        siempre en el mismo proyecto. He trabajado en proyectos grandes, en proyectos pequeños, en proyectos de larga y corta duración.
-        Ayudando en las oficinas de los clientes o participando del día a día de la sede de mi empresa. He trabajado en proyectos Waterfall
-        y con metodologías ágiles. 
-    </p>
-    <p>He trabajado con más de 100 profesionales de diferente edad, rol, profesionalidad y experiencia de los que
-        he aprendido y desaprendido mucho.
-    </p>
-    <jds-card ng-repeat="job in jc.jobs">
-        <jds-card-media resource="{{job.urlLogo}}"></jds-card-media>
-        
-        <jds-card-content
-            title="{{job.yearInit}} - {{job.yearEnd}}"
-            subtitle="{{job.enterprise}}"
-            detail="{{job.name}}"
-            description="{{job.description}}">
-        </jds-card-content> 
-    </jds-card>
+    <jds-loader resource="jc.jobs">
+        <p>Solo he trabajado en una única empresa. Sin embargo creo que mi experiencia es bastante diversa debido a que no he trabajado
+            siempre en el mismo proyecto. He trabajado en proyectos grandes, en proyectos pequeños, en proyectos de larga y corta duración.
+            Ayudando en las oficinas de los clientes o participando del día a día de la sede de mi empresa. He trabajado en proyectos Waterfall
+            y con metodologías ágiles. 
+        </p>
+        <p>He trabajado con más de 100 profesionales de diferente edad, rol, profesionalidad y experiencia de los que
+            he aprendido y desaprendido mucho.
+        </p>
+        <jds-card ng-repeat="job in jc.jobs">
+            <jds-card-media resource="{{job.urlLogo}}"></jds-card-media>
+            
+            <jds-card-content
+                title="{{job.yearInit}} - {{job.yearEnd}}"
+                subtitle="{{job.enterprise}}"
+                detail="{{job.name}}"
+                description="{{job.description}}">
+            </jds-card-content> 
+        </jds-card>
+    </jds-loader>
 </jds-container>

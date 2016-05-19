@@ -11,6 +11,7 @@ export default function ($api, $log) {
             .catch(apiGetError);
             
         function apiGetSuccess(profile) {
+            pc.profiles= profile;
             pc.profile = profile.shift();
         }
         
