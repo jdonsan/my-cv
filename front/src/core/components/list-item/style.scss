@@ -13,16 +13,25 @@
         }
     }
     
+    
+    
+    
+}
+
+.list-item-media {
+    width: 3rem;
+    margin-right: 1rem;
+    
     img {
-        border-radius: 48px;
-        width: 48px;
-        height: 48px;
+        border-radius: 3rem;
+        width: 3rem;
+        height: 3rem;
         display: block;
     }
-    
-    div {
-        padding-left: 1rem;
-    }
+}
+
+.list-item-content {
+    width: 90%;
     
     h3, p {
         padding: 0;
