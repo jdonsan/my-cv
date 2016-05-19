@@ -9,6 +9,7 @@ import cardMedia from './card-media';
 import cardContent from './card-content';
 import list from './list';
 import listItem from './list-item';
+import loader from './loader';
 
 angular
     .module('app.core.components', [])
@@ -22,4 +23,5 @@ angular
     .component('jdsCardMedia', cardMedia)
     .component('jdsCardContent', cardContent)
     .component('jdsList', list)
-    .component('jdsListItem', listItem);
+    .component('jdsListItem', listItem)
+    .component('jdsLoader', loader);

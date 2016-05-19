@@ -1,0 +1,13 @@
+<div class="loader" ng-if="!$ctrl.resource">
+    <svg ng-if="$ctrl.show" class="loader-spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+   <circle class="loader-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+</svg>
+</div>
+
+<div ng-if="$ctrl.resource.length > 0" ng-transclude="">
+
+</div>
+
+<div ng-if="$ctrl.resource.length === 0" ng-transclude="">
+    <h1>No existen datos actualmente</h1>
+</div>
