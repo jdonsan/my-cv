@@ -85,8 +85,8 @@ module.exports = {
             name: 'MVC.NET',
             category: 'Framework Web',
             description: `
-                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
-                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+                Si desarrollo una API seria, me gusta trabajar con MVC.NET. Me da todo lo que necesito y me da una robustez
+                que no he encontrado con otras plataformas.
             `,
             type: 'BACK',
             level: 75,
@@ -98,8 +98,8 @@ module.exports = {
             name: 'SQL Server',
             category: 'Base de datos',
             description: `
-                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
-                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+                Fue el primer motor de base de datos. Mis primeros modelos relacionales,
+                mis primeros jobs, mis primeros procedimientos. Siempre me ha gustado mucho optimizar las querys.
             `,
             type: 'BACK',
             level: 70,
@@ -111,8 +111,8 @@ module.exports = {
             name: 'Scrum',
             category: 'Metodologías ágiles',
             description: `
-                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
-                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+                Soy un creyente de las prácticas ágiles. Me gusta
+                como ayudan al equipo a sentirse importante, a coger responsabilidades y hacer que mejoren.
             `,
             type: 'OTHERS',
             level: 80,
@@ -124,8 +124,8 @@ module.exports = {
             name: 'Ionic Framework',
             category: 'Framework multiplataforma',
             description: `
-                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
-                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+                Nuestros desarrollos híbridos para móvil los realizamos con Ionic. Nos permite aportar todos nuestro conocimiento
+                Web en un entorno móvil.
             `,
             type: 'FRONT',
             level: 75,
@@ -137,12 +137,12 @@ module.exports = {
             name: 'Cucumber',
             category: 'Librería BDD',
             description: `
-                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
-                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+                Aprendí en BBVA a realizar desarrollo dirigidos por comportamientos. Aprendí mucho de testing.
+                Cucumber me fue una herramienta impresindible para validar mis desarrollos.
             `,
             type: 'OTHERS',
             level: 50,
-            yearsExperience: 1,
+            yearsExperience: 2,
             logo: 'img/skill/cucumber.png',
             active: true
         },
@@ -150,8 +150,8 @@ module.exports = {
             name: 'Git',
             category: 'Repositorio de código',
             description: `
-                Para proyectos concretos, me gusta mucho trabajar con MongoDB y la versatilidad que me da. Le veo
-                limitaciones, pero me ayuda mucho a crear prototipos rápidamente.
+                Había trabajado con SVN, pero Git me enamoró por lo fácil que es trabajar con él y lo bien que se lleva con las 
+                prácticas ágiles. Es muy fléxible y dinámico.
             `,
             type: 'OTHERS',
             level: 70,

@@ -72,6 +72,18 @@ module.exports = {
             year: 2013,
             urlLogo: 'img/course/aspnet.jpg',
             active: true
+        },
+        {
+            name: 'Curso de Auditoría de Seguridad Informática',
+            description: `
+                Gracias a este curso, aprendí mejor las vulnerabilidades que se pueden dar en nuestra empresa o proyecto.
+                Me abrió los ojos y me ayudó a tenerlo en cuenta en mis desarrollos.
+            `,
+            type: 'OTHERS',
+            academy: 'UAH',
+            year: 2012,
+            urlLogo: 'img/course/security.jpg',
+            active: true
         }
     ]
 };
