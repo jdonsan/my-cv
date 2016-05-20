@@ -21,6 +21,15 @@ jds-loader {
     }
 }
 
+.loader-error {
+    text-align: center;
+    margin-top: 2rem;
+    
+    img {
+        width: 35rem;
+    }
+}
+
 .loader-spinner {
     margin-top: 2rem;
     animation: rotator $duration linear infinite;

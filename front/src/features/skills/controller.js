@@ -16,6 +16,7 @@ export default function ($api, $log) {
         
         function apiGetError(error) {
             $log.error(error);
+            sc.skills = [];
         }
     }
 };

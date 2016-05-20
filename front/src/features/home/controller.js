@@ -11,12 +11,13 @@ export default function ($api, $log) {
             .catch(apiGetError);
             
         function apiGetSuccess(profile) {
-            pc.profiles= profile;
+            pc.profiles = angular.copy(profile);
             pc.profile = profile.shift();
         }
         
         function apiGetError(error) {
             $log.error(error);
+            pc.profiles = [];
         }
     }
 };
