@@ -4,10 +4,10 @@
 </svg>
 </div>
 
-<div ng-if="$ctrl.resource.length > 0" ng-transclude="">
+<div class="loader-container" ng-if="$ctrl.resource.length > 0" ng-transclude="">
 
 </div>
 
-<div ng-if="$ctrl.resource.length === 0" ng-transclude="">
+<div ng-if="$ctrl.resource.length === 0">
     <h1>No existen datos actualmente</h1>
 </div>

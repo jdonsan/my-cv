@@ -11,6 +11,16 @@ jds-loader {
     justify-content: center; 
 }
 
+.loader-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    @media screen and (min-width: $screen-md-min) { 
+        justify-content: space-between;
+    }
+}
+
 .loader-spinner {
     margin-top: 2rem;
     animation: rotator $duration linear infinite;
