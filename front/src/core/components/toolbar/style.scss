@@ -5,15 +5,13 @@
     height: $height-toolbar-screen-sm;
     position: fixed;
     right: 0;
-    left: 0;
+    left:0;
     padding: 0rem 1rem;
     line-height: $height-toolbar-screen-sm;
     z-index: 99;
     
     @media screen and (min-width: $screen-md-min) { 
         height: $height-toolbar-screen-md;
-        left: $width-drawer-screen-md;
-        padding: 0rem 1.5rem;
         line-height: $height-toolbar-screen-md;
     }
 }
